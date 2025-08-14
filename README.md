@@ -45,3 +45,47 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/YourUsername/your-repo-name.git
 cd your-repo-name
+
+
+Install dependencies
+npm install
+
+Database setup
+
+Create a database named video_portfolio_db.
+
+Run SQL scripts to create:
+
+users table (for admin login)
+
+portfolio_videos table
+
+services table
+
+Insert the default admin user into the users table.
+
+4️⃣ Configure environment variables
+Create a .env file in the root directory and add:
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_mysql_password
+DB_NAME=video_portfolio_db
+
+Run the development server
+npm run dev
+
+Admin Access
+
+Navigate to: http://localhost:3000/login
+
+Username: admin
+
+Password: password123 (or the one you set in the database)
+
+License
+
+This project is licensed under the MIT License.
+
+Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss your ideas.
